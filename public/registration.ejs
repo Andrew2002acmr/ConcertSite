@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300" rel="stylesheet">
+    <link rel="stylesheet" href="/css/Auth.css">
+    <title>Регистрация</title>
+</head>
+
+<body>
+    <div class="container form-container">
+        <form action="/" class="auth-form">
+            <div class="container-form">
+                <h2 class="header-form">Регистрация</h2>
+
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Пароль</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingRepeatPassword" placeholder="Password">
+                    <label for="floatingPassword">Введите пароль ещё раз</label>
+                </div>
+                <div class="button-container">
+                    <button type="button" class="auth-btn auth-btn-top"
+                        id="registration-btn">Зарегестрироваться</button>
+
+                </div>
+            </div>
+        </form>
+        <form action="/" method="post" id="token-auth">
+            <input type="hidden" name="token" id="token">
+        </form>
+    </div>
+
+
+    <%-include("templates/scripts")%>
+        <script src="/js/registration.js"></script>
+</body>
+
+</html>

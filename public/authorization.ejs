@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+  <%-include("templates/linkes")%>
+    <link rel="stylesheet" href="/css/Auth.css">
+    <title>Авторизация</title>
+</head>
+
+<body>
+    <div class="container form-container">
+        <form action="/" class="auth-form">
+            <div class="container-form">
+                <h2 class="header-form">Авторизация</h2>
+
+                <div class="form-floating mb-3">
+                    <input type="login" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">email</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Пароль</label>
+                </div>
+                <div class="button-container">
+                    <button type="button" class="auth-btn auth-btn-top" id="auth-btn">Авторизоваться</button>
+                    <div class="buttons-bottom">
+                        <button  type="button" class="auth-btn" id="registration-btn">Зарегестрироваться</button>
+                        <button type="button" class="auth-btn" id="recover-password">Забыли пароль</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <form action="/" method="post" id="token-auth">
+            <input type="hidden" name="token" id="token">
+        </form>
+    </div>
+    <%-include("templates/scripts")%>
+    <script src="/js/auth.js"></script>
+</body>
+
+</html>

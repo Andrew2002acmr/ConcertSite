@@ -1,0 +1,148 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px; 
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+
+h2{
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+button {
+    font-size: 18px;
+}
+
+header{
+    margin-top: 20px;
+    background-color: #E0E0E0;
+    height: 120px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin-bottom: 15px;
+}
+
+.header-left {
+    flex-direction: column;
+    align-items: flex-start !important;
+}
+
+.header-city {
+    padding-left: 32px;
+}
+
+.auth-button {
+    margin-right: 20px;
+}
+
+.container-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-button{
+    line-height: 25px;
+    padding: 10px 30px;
+    border: none;
+    background-color: #4CA3F3;
+    color: #fff;
+    border-radius: 7px;
+}
+
+
+.header-right .nav-button:not(:nth-last-child()) {
+    margin-right: 10px;
+}
+
+
+/* events */
+
+.container-cards {
+    display: flex;
+    margin-left: 90px;
+    margin-right: 90px;
+    flex-wrap: wrap;
+}
+
+.card-event {
+    
+    background-color: #E0E0E0;
+    width: 350px;
+    margin-bottom: 20px;
+    border-radius: 20px 0 20px 0;
+}
+
+.card-event:not(:nth-child(3n)){
+    margin-right: 30px;
+}
+
+.event-top {
+    position: relative;
+}
+
+.favorite-icon {
+    color: #fff;
+    width: 32px;
+    background-image: url(/img/favorite-icon.svg);
+    height: 40px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.card-event img{
+    width: 100%;
+    border-radius: 20px 0 0 0;
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    padding: 9px;
+    font-size: 22px;
+}
+
+.card-info .event-bottom-header .event-name {
+    font-size: 28px;
+    line-height: 45px;
+}
+
+.card-info .event-bottom-body {
+    display: flex;
+    font-size: 22px;
+}
+
+.card-info .event-bottom-body .event-date {
+    margin-right: 10px;
+}
+
+.card-info .event-bottom-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-bottom:not(:nth-child(3n)){
+    margin-bottom: 40px;
+}
+
+.card-info .event-bottom-footer .button-buy {
+    line-height: 24px;
+    padding: 13px 38px;
+    border: none;
+    background-color: #FFCD4D;
+}
+
+
+.event-price {
+    line-height: 46px;
+}
